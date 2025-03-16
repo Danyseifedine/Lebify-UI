@@ -5,16 +5,15 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "licence": "MIT",
-  "style": "dist/index.css",
+  "style": "dist/styles.css",
   "types": "types/index.d.ts",
   "files": [
     "dist",
     "types",
-    "dist/index.css",
-    "dist/components/**/*.css"
+    "dist/styles.css"
   ],
   "scripts": {
-    "prebuild": "rimraf dist && mkdir dist && mkdir dist\\components",
+    "prebuild": "rimraf dist && mkdir dist",
     "build": "rollup -c",
     "test": "jest",
     "lint": "eslint src/**/*.{js,jsx}",

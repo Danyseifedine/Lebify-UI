@@ -10,7 +10,8 @@
   "files": [
     "dist",
     "types",
-    "dist/components"
+    "dist/index.css",
+    "dist/components/**/*.css"
   ],
   "scripts": {
     "prebuild": "rimraf dist && mkdir dist && mkdir dist\\components",

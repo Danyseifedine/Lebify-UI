@@ -58,8 +58,24 @@ type BorderRadius = 'none' | 'small' | 'medium' | 'large' | 'pill' | 'rounded';
 type LoadingSpinner = 'dots' | 'circle' | 'pulse' | 'bars' | 'ellipsis';
 
 export interface ButtonProps {
-    children?: ReactNode;
-    variant?: ButtonVariant;
+    /**
+     * Button content
+     */
+    children: ReactNode;
+
+    /**
+     * Button visual style variant
+     * @default "primary"
+     */
+    variant?: 'primary' | 'secondary' | 'tertiary' | 'basic' |
+    'cedar' | 'cedar-light' | 'cedar-dark' |
+    'sea' | 'coast' | 'azure' |
+    'stone' | 'earth' | 'terracotta' |
+    'urban' | 'concrete' | 'steel' |
+    'olive' | 'saffron' | 'grape' |
+    'festive' | 'celebration' | 'heritage' |
+    'copper' | 'silver' | 'ceramic' |
+    'tech' | 'digital' | 'startup';
     buttonType?: ButtonType;
     size?: 'small' | 'medium' | 'large';
     disabled?: boolean;

@@ -67,15 +67,7 @@ export interface ButtonProps {
      * Button visual style variant
      * @default "primary"
      */
-    variant?: 'primary' | 'secondary' | 'tertiary' | 'basic' |
-    'cedar' | 'cedar-light' | 'cedar-dark' |
-    'sea' | 'coast' | 'azure' |
-    'stone' | 'earth' | 'terracotta' |
-    'urban' | 'concrete' | 'steel' |
-    'olive' | 'saffron' | 'grape' |
-    'festive' | 'celebration' | 'heritage' |
-    'copper' | 'silver' | 'ceramic' |
-    'tech' | 'digital' | 'startup';
+    variant?: ButtonVariant;
     buttonType?: ButtonType;
     size?: 'small' | 'medium' | 'large';
     disabled?: boolean;
@@ -183,7 +175,7 @@ interface ButtonLoadingSpinner {
     ELLIPSIS: 'ellipsis';
 }
 
-declare const Button: React.FC<ButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>> & {
+export const Button: React.FC<ButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>> & {
     VARIANTS: ButtonVariantCollections;
     TYPES: ButtonTypes;
     HOVER_EFFECTS: ButtonHoverEffects;

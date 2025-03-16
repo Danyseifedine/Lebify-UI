@@ -9,8 +9,7 @@
   "types": "types/index.d.ts",
   "files": [
     "dist",
-    "types",
-    "dist/styles.css"
+    "types"
   ],
   "scripts": {
     "prebuild": "rimraf dist && mkdir dist",

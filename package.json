@@ -1,11 +1,10 @@
 {
   "name": "lebify-ui",
-  "version": "0.1.36",
+  "version": "0.1.37",
   "description": "A React UI library inspired by Lebanese design",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "licence": "MIT",
-  "style": "dist/styles.css",
   "types": "types/index.d.ts",
   "files": [
     "dist",

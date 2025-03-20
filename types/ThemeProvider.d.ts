@@ -1,19 +1,13 @@
 import { ReactNode } from 'react';
 
-export interface AutoThemeMap {
-    day: string;
-    night: string;
-}
-
 export interface ThemeProviderProps {
     children: ReactNode;
     defaultTheme?: string;
-    storageKey?: string;
+    identifier?: string;
     autoTheme?: boolean;
     morningHour?: number;
     eveningHour?: number;
     themes?: string[];
-    autoThemeMap?: AutoThemeMap;
 }
 
 export interface ThemeContextType {
@@ -25,7 +19,7 @@ export interface ThemeContextType {
     availableThemes: string[];
 }
 
-export declare const useTheme: () => ThemeContextType;
+export declare const useTheme: (identifier?: string) => ThemeContextType;
 
 declare const ThemeProvider: React.FC<ThemeProviderProps>;
 

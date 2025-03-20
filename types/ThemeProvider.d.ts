@@ -4,12 +4,17 @@ export interface ThemeProviderProps {
     children: ReactNode;
     defaultTheme?: 'light' | 'dark';
     storageKey?: string;
+    autoTheme?: boolean;
+    morningHour?: number;
+    eveningHour?: number;
 }
 
 export interface ThemeContextType {
     theme: string;
     setTheme: (theme: string) => void;
     toggleTheme: () => void;
+    autoTheme: boolean;
+    setAutoTheme: (auto: boolean) => void;
 }
 
 export declare const useTheme: () => ThemeContextType;

@@ -19,7 +19,7 @@ export interface ThemeContextType {
     availableThemes: string[];
 }
 
-export declare const useTheme: (identifier?: string) => ThemeContextType;
+export declare const useTheme: () => ThemeContextType;
 
 declare const ThemeProvider: React.FC<ThemeProviderProps>;
 

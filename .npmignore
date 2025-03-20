@@ -24,6 +24,7 @@ __tests__/
 **/*.spec.js
 **/*.spec.jsx
 **/*.stories.jsx
+test-app/
 
 # Misc
 node_modules/

@@ -45,12 +45,6 @@ type HoverEffect =
 // Define icon position types
 type IconPosition = 'left' | 'right';
 
-// Define tooltip position types
-type TooltipPosition = 'top' | 'right' | 'bottom' | 'left';
-
-// Define tooltip theme types
-type TooltipTheme = 'default' | 'cedar' | 'sea' | 'stone' | 'urban' | 'saffron';
-
 // Define border radius types
 type BorderRadius = 'none' | 'small' | 'medium' | 'large' | 'pill' | 'rounded';
 
@@ -81,12 +75,6 @@ export interface ButtonProps {
     iconSpacing?: string;
     iconClassName?: string;
     iconStyle?: CSSProperties;
-    tooltip?: ReactNode;
-    tooltipPosition?: TooltipPosition;
-    tooltipDelay?: number;
-    tooltipClassName?: string;
-    tooltipStyle?: CSSProperties;
-    tooltipTheme?: TooltipTheme;
     borderRadius?: BorderRadius;
     loading?: boolean;
     loadingText?: string;
@@ -138,24 +126,6 @@ interface ButtonIconPositions {
     RIGHT: 'right';
 }
 
-// Define tooltip position collections
-interface ButtonTooltipPositions {
-    TOP: 'top';
-    RIGHT: 'right';
-    BOTTOM: 'bottom';
-    LEFT: 'left';
-}
-
-// Define tooltip theme collections
-interface ButtonTooltipThemes {
-    DEFAULT: 'default';
-    CEDAR: 'cedar';
-    SEA: 'sea';
-    STONE: 'stone';
-    URBAN: 'urban';
-    SAFFRON: 'saffron';
-}
-
 // Define border radius collections
 interface ButtonBorderRadius {
     NONE: 'none';
@@ -180,8 +150,6 @@ export const Button: React.FC<ButtonProps & React.ButtonHTMLAttributes<HTMLButto
     TYPES: ButtonTypes;
     HOVER_EFFECTS: ButtonHoverEffects;
     ICON_POSITIONS: ButtonIconPositions;
-    TOOLTIP_POSITIONS: ButtonTooltipPositions;
-    TOOLTIP_THEMES: ButtonTooltipThemes;
     BORDER_RADIUS: ButtonBorderRadius;
     LOADING_SPINNER: ButtonLoadingSpinner;
 };

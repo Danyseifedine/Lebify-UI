@@ -10,6 +10,7 @@ type CulinaryVariant = 'olive' | 'saffron' | 'grape';
 type FestivalVariant = 'festive' | 'celebration' | 'heritage';
 type CraftVariant = 'copper' | 'silver' | 'ceramic';
 type ModernVariant = 'tech' | 'digital' | 'startup';
+type ContemporaryVariant = 'glass' | 'neomorphic' | 'gradient' | 'minimal' | 'dark' | 'pill' | 'flat';
 
 // Combined variant type
 type InputVariant =
@@ -21,7 +22,8 @@ type InputVariant =
     | CulinaryVariant
     | FestivalVariant
     | CraftVariant
-    | ModernVariant;
+    | ModernVariant
+    | ContemporaryVariant;
 
 // Define input types
 type InputType =
@@ -293,6 +295,7 @@ interface InputVariantCollections {
     FESTIVAL: FestivalVariant[];
     CRAFT: CraftVariant[];
     MODERN: ModernVariant[];
+    CONTEMPORARY: ContemporaryVariant[];
 }
 
 // Define input type collection

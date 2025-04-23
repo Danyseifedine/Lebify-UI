@@ -5,5 +5,6 @@ import { Button } from './Button';
 import { ThemeProvider, useTheme } from './ThemeProvider';
 import { Input } from './Input';
 import { Pattern } from './Pattern';
+import { Avatar } from './Avatar';
 
-export { Button, ThemeProvider, useTheme, Input, Pattern };
+export { Button, ThemeProvider, useTheme, Input, Pattern, Avatar };

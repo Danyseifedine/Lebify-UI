@@ -22,7 +22,8 @@ type AvatarVariant =
     | FestivalVariant
     | CraftVariant
     | ModernVariant
-    | 'random';
+    | 'random'
+    | 'none';
 
 // Define avatar size types
 type AvatarSize = 'small' | 'medium' | 'large' | 'xlarge';
@@ -60,7 +61,7 @@ export interface AvatarProps {
 
     /**
      * Avatar variant/style
-     * @default "primary"
+     * @default "basic"
      */
     variant?: AvatarVariant;
 

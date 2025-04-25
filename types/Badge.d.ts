@@ -115,6 +115,13 @@ export interface BadgeProps {
     interactive?: boolean;
 
     /**
+     * Controls whether light variant badges have borders
+     * Only applies when variant is "light"
+     * @default true
+     */
+    isBordered?: boolean;
+
+    /**
      * Additional CSS class names
      */
     className?: string;
